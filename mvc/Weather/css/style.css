@@ -1,0 +1,271 @@
+body {
+  background: #345688;
+}
+
+.total {
+  position: absolute;
+  top: -20px;
+  margin-left: calc(50vw - 390px);
+}
+
+.search-bar {
+  border: none;
+  position: absolute;
+  padding: 14px;
+  top: 80px;
+  font-size: 20px;
+  left: 230px;
+  opacity: 0.5;
+  border-radius: 40px 0px 0px 40px;
+  width: 200px;
+  background-color: #fff;
+}
+.search-bar:focus {
+  outline: none;
+  opacity: 1;
+}
+
+input::placeholder {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.search-btn {
+  position: relative;
+  background: #C6604A;
+  border-radius: 0px 40px 40px 0px;
+  width: 50px;
+  height: 50.5px;
+  top: 80px;
+  border: none;
+  margin-left: 453px;
+}
+.search-btn:focus {
+  outline: none;
+}
+
+.fa-search {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+}
+
+.container {
+  position: absolute;
+  background-color: #83AB91;
+  width: 360px;
+  height: 500px;
+  margin-top: 150px;
+  margin-left: calc(50vw - 200px);
+  border-radius: 0.75em;
+  overflow: hidden;
+  box-shadow: 0px 0px 50px 0px #222;
+  transition: 0.4s all ease-in-out;
+}
+.container.load .section-1 {
+  height: 50%;
+}
+.container.load .section-5 {
+  height: 50%;
+}
+
+.section-1 {
+  position: absolute;
+  top: 0;
+  background-color: #83AB91;
+  height: 40px;
+  border-top-left-radius: 0.75em;
+  border-top-right-radius: 0.75em;
+  width: 100%;
+  transition: 0.4s all ease-in-out;
+  z-index: 5;
+}
+
+.section-2 {
+  margin-top: 70px;
+  background-color: #E8BC7F;
+  height: 80px;
+}
+
+.section-3 {
+  background-color: #E49757;
+  height: 80px;
+}
+
+.section-4 {
+  background-color: #BB6553;
+  height: 200px;
+}
+
+.section-5 {
+  position: absolute;
+  bottom: 0;
+  background-color: #694548;
+  height: 70px;
+  width: 100%;
+  transition: 0.4s all ease-in-out;
+}
+
+.title {
+  color: #C8DACF;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  transform: translateY(5px);
+  font-weight: bold;
+}
+
+.map {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.cel {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  left: 1.5rem;
+  top: 1.5rem;
+  text-align: right;
+}
+
+.celsius {
+  margin: 0;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  top: -20px;
+  left: 4px;
+  opacity: 0.1;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+}
+
+.location {
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  top: -20px;
+  left: 4.7rem;
+  width: 273px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.7;
+  transform: translateY(5px);
+  font-weight: bold;
+}
+
+.celsius {
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  top: -5px;
+  left: 75px;
+  opacity: 0.7;
+  transform: translateY(5px);
+  font-weight: bold;
+}
+
+.day {
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  top: 25px;
+  left: 60px;
+  letter-spacing: 1.5px;
+  opacity: 0.7;
+}
+
+.moisture {
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  top: 50px;
+  left: 12.5rem;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 1.5px;
+}
+
+.wind {
+  margin: 0;
+  font-size: 15px;
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  top: 55px;
+  left: 82px;
+  letter-spacing: 1.2px;
+  opacity: 0.7;
+}
+
+.humidity {
+  margin: 0;
+  font-size: 15px;
+  position: relative;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  top: 60px;
+  left: 69px;
+  opacity: 0.7;
+}
+
+.cat {
+  margin-left: 65px;
+  width: 100px;
+  margin-top: -30px;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.error {
+  position: absolute;
+  font-size: 15mm;
+  margin-top: calc(50vh - 100px);
+  margin-left: calc(50vw - 160px);
+  color: white;
+  display: none;
+  opacity: 0.3;
+  font-family: "Lato", sans-serif;
+}
+
+.blur {
+  position: absolute;
+  color: white;
+  z-index: -1;
+  font-size: 30px;
+  margin-top: 70px;
+  margin-left: calc(50vw - 160px);
+  font-family: "Lato", sans-serif;
+}
+
+.created {
+  position: relative;
+  color: white;
+  opacity: 0.7;
+  font-size: 20px;
+  top: 15px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
