@@ -9,7 +9,7 @@ class Model
         $this->string = self::STRING_DEF;
     }
 	public function get_nextstep() {
-		if($this->step >= 3) {
+		if($this->step >= 1) {
 			return 0;
 		}
 		return $this->step + 1;
@@ -28,13 +28,10 @@ class Model
 		switch ($this->step) {
 			case 0 :
 
-                include 'uvod.php';
-                break;
-			case 1 :
-                $this->string = "Krok 1";
+               $this->string = "Krok 1";
                 include 'ToDo/index.html';
 				break;
-			case 2 :
+			case 1 :
 				$this->string = "Krok 2";
                 include 'Weather/index.html';
 				break;

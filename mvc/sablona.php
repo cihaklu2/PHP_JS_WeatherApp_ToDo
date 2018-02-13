@@ -51,7 +51,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-
+          <?php  include 'uvod.php'?>
 
         </div>
     </section>
