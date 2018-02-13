@@ -1,4 +1,4 @@
-// fetch the data from https://ipinfo.io
+
 
 function fe(){
   const getLocByIp = () => {
@@ -82,7 +82,7 @@ else{
  document.querySelector('.cat').src = 'http:/' + img
  document.querySelector('.container').classList.remove('load')
  
- // changing celsius into franhiet
+ // změní na celsius
  $('.celsius').click(function(){
   if (unitToggle) {
    document.querySelector('.celsius').innerText = weather_f + '°' + ' F'

@@ -1,4 +1,3 @@
-// Modernizr localStorage test method
 var hasLocalStorage = (function() {
   var v = new Date();
   try {
@@ -229,20 +228,20 @@ if(!hasLocalStorage) {
       $todo.html('');
       if(items && items.length > 0) {
         for(var i = 0; i < items.length; i++) {
-          var $nieuwElement = $('<div class="item" data-id=""></div>');
-          $nieuwElement.text(items[i].description);
-          $nieuwElement.attr('data-id', items[i].id);
-          $nieuwElement.addClass('priority'+ items[i].priority);
+          var $newElement = $('<div class="item" data-id=""></div>');
+          $newElement.text(items[i].description);
+          $newElement.attr('data-id', items[i].id);
+          $newElement.addClass('priority'+ items[i].priority);
 
           var $deleteElement = $('<span class="remove"><i class="fa fa-remove fa-fw"></i></span>');
 
-          $deleteElement.appendTo($nieuwElement);
+          $deleteElement.appendTo($newElement);
           if(!items[i].checked) {
             var $checkElement = $('<span class="check"><i class="fa fa-check fa-fw"></i></span>');
-            $checkElement.appendTo($nieuwElement);
+            $checkElement.appendTo($newElement);
           }
 
-          $nieuwElement.appendTo($todo);
+          $newElement.appendTo($todo);
         }
       } else {
         $itemNone.appendTo($todo);
